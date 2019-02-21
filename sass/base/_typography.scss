@@ -1,0 +1,39 @@
+// call the fonts
+@font-face {
+    font-family: 'striverx';
+    src: url('img/striverx-webfont.woff2') format('woff2'),
+         url('img/striverx-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+// reset
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// start styling
+body {
+    font-family: $ff-body;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.16rem;
+    color: $clr-dark;
+}
+
+.intro__title {
+    font-family: $ff-title;
+    font-size: 10rem;
+    color: $clr-accent;
+}
+
+.section__title {
+    font-weight: bold;
+    font-size: 3rem;
+}
+.section__subtitle {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+
