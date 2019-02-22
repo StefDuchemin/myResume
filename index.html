@@ -10,82 +10,91 @@
   <title>SD Portfolio</title>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#profil">Profil</a></li>
-      <li><a href="#skills">Compétences</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <section class="intro">
-    <h1 class="intro__title">Stef D.</h1>
-    <img src="img/meDuo.png" alt="Stephanie Duchemin" class="myPhoto">
-    <p class="intro__text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, aut.
-    </p>
-  </section>
-
-  <section class="profil">
-    <h2 class="section__title">Profil.</h2>
-    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque facere perspiciatis doloremque excepturi ut hic recusandae iure, nesciunt blanditiis voluptas expedita quam obcaecati et impedit quo eligendi aliquam quibusdam.</p>
-  </section>
-
-  <section class="skills">
-    <h2 class="section__title">Compétences.</h2>
-    <h3 class="section__subtitle">Web Design</h3>
-    <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui totam ut pariatur natus quis eligendi nihil. Voluptatem architecto voluptates ad!</p>
-    <div class="skills__bars">
-      <div class="skills__barItem1">Photoshop</div>
-      <div class="skills__barItem1">Figma</div>
-      <div class="skills__barItem1">Illustrator</div>
-      <div class="skills__barItem1">Pen & Paper</div>
-      <div class="skills__barItem1">UX/UI design</div>
-      <div class="skills__barItem1">SEO</div>
+  <!-- Ensemble du doc en grid -->
+  <div class="grid-container">
+    <!-- sidenav position fixed with animation on hover -->
+    <div id="mySidenav" class="sidenav">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="profil">Profil</a>
+      <a href="#" id="skills">Compétences</a>
+      <a href="#" id="portfolio">Portfolio</a>
+      <a href="#" id="contact">Contact</a>
     </div>
+    <!-- create vertical lines -->
+    <span id="bar1" class="bars"></span>
+    <span id="bar2" class="bars"></span>
+    <!-- The intro -->
+    <div class="intro__wrapper">
+      <section id="intro" class="intro">
+        <h1 class="intro__title">Stef D.</h1>
+        <img src="img/meDuo.png" alt="Stephanie Duchemin" class="myPhoto">
+        <p class="intro__text">
+          <span>Stéphanie Duchemin.</span><br>
+          <span>Future Web Designer et Front-end Developper.</span><br>
+          <span>En somme, future Full Stack Designer!</span>
+        </p>
+      </section>
+    </div> 
+    <span id="bar3" class="bars"></span>
+    <!-- The profil -->
+    <section class="profil"> 
+      <h2 class="section__title">Profil.</h2>
+      <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo atque facere perspiciatis doloremque excepturi ut hic recusandae iure, nesciunt blanditiis voluptas expedita quam obcaecati et impedit quo eligendi aliquam quibusdam.</p>
+    </section>
 
-    <h3 class="section__subtitle">Front-End Dev</h3>
-    <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate voluptatem debitis facere nemo repudiandae ipsum odit molestiae libero! Vitae!</p>
-    <div class="skills__bars">
-      <div class="skills__barItem1">CSS/HTML</div>
-      <div class="skills__barItem1">Javascript</div>
-      <div class="skills__barItem1">SASS</div>
-      <div class="skills__barItem1">Bootstrap</div>
-      <div class="skills__barItem1">Wordpress</div>
-      <div class="skills__barItem1">Version Control (Git)</div>
-    </div>
+    <section class="skills">
+      <h2 class="section__title">Compétences.</h2>
+      <h3 class="section__subtitle">Web Design</h3>
+      <p class="section__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui totam ut pariatur natus quis eligendi nihil. Voluptatem architecto voluptates ad!</p>
+      <div class="skills__bars">
+        <div class="skills__barItem1">Photoshop</div>
+        <div class="skills__barItem1">Figma</div>
+        <div class="skills__barItem1">Illustrator</div>
+        <div class="skills__barItem1">Pen & Paper</div>
+        <div class="skills__barItem1">UX/UI design</div>
+        <div class="skills__barItem1">SEO</div>
+      </div>
 
-    <h3 class="section__subtitle">Autres</h3>
-    <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui blanditiis facere mollitia nesciunt, inventore ducimus error hic recusandae autem quaerat!</p>
-    <div class="skills__bars">
-        <div class="skills__barItem1">Gestion de projets</div>
-        <div class="skills__barItem1">Communication</div>
-        <div class="skills__barItem1">Relationnel</div>
-        <div class="skills__barItem1">Résolution de problème</div>
-        <div class="skills__barItem1">Anglais</div>
-        <div class="skills__barItem1">3D (Cinema 4D)</div>
-    </div>
-    <button>
-      <a href="#" class="cv-download">Télécharger mon CV</a>
-    </button>
-  </section>
+      <h3 class="section__subtitle">Front-End Dev</h3>
+      <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad cupiditate voluptatem debitis facere nemo repudiandae ipsum odit molestiae libero! Vitae!</p>
+      <div class="skills__bars">
+        <div class="skills__barItem1">CSS/HTML</div>
+        <div class="skills__barItem1">Javascript</div>
+        <div class="skills__barItem1">SASS</div>
+        <div class="skills__barItem1">Bootstrap</div>
+        <div class="skills__barItem1">Wordpress</div>
+        <div class="skills__barItem1">Version Control (Git)</div>
+      </div>
 
-  <section class="portfolio">
-    <h2 class="section__title">Portfolio.</h2>
-    <img src="" alt="">
-    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, hic!</p>
-    <img src="" alt="">
-    <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, velit?</p>
-  </section>
-
-  <section class="contact">
-    <h2 class="section__title">Contact.</h2>
-    <a href="">Mail</a>
-    <a href="">Phone</a>
-  </section>
-
+      <h3 class="section__subtitle">Autres</h3>
+      <p class="section__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui blanditiis facere mollitia nesciunt, inventore ducimus error hic recusandae autem quaerat!</p>
+      <div class="skills__bars">
+          <div class="skills__barItem1">Gestion de projets</div>
+          <div class="skills__barItem1">Communication</div>
+          <div class="skills__barItem1">Relationnel</div>
+          <div class="skills__barItem1">Résolution de problème</div>
+          <div class="skills__barItem1">Anglais</div>
+          <div class="skills__barItem1">3D (Cinema 4D)</div>
+      </div>
+      <button>
+        <a href="#" class="cv-download">Télécharger mon CV</a>
+      </button>
+    </section>
+<!-- The portfolio -->
+    <section class="portfolio">
+      <h2 class="section__title">Portfolio.</h2>
+      <img src="" alt="">
+      <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, hic!</p>
+      <img src="" alt="">
+      <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, velit?</p>
+    </section>
+<!-- Contact -->
+    <section class="contact">
+      <h2 class="section__title">Contact.</h2>
+      <a href="">Mail</a>
+      <a href="">Phone</a>
+    </section>
+</div>
   <footer>
     <p class="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, accusamus.</p>
   </footer>
